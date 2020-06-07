@@ -25,7 +25,7 @@ Caso desejemos viajar de **GRU** para **CDG** existem as seguintes rotas:
 4. GRU - SCL - ORL - CDG ao custo de **$48**
 5. GRU - BRC - CDG ao custo de **$45**
 
-O melhor preço é da rota **4** logo, o output da consulta deve ser **CDG - SCL - ORL - CDG**.
+O melhor preço é da rota **4** (corrigindo: rota 1) logo, o output da consulta deve ser **CDG - SCL - ORL - CDG** (corrigindo: GRU - BRC - SCL - ORL - CDG).
 
 ### Execução do programa ###
 A inicializacao do teste se dará por linha de comando onde o primeiro argumento é o arquivo com a lista de rotas inicial.

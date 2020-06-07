@@ -40,7 +40,7 @@ Todas as pastas contém um arquivo index que centraliza a exportação de todos 
 
 ## Descrição de api rest ##
 
-A api possui dois endpoints, GET -> ```/route/best``` e  POST->```/route``
+A api possui dois endpoints, GET -> ```/route/best``` e  POST->```/route```
 
 ### GET -> /route/best ###
 

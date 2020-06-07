@@ -14,17 +14,6 @@ const readFile = (filename) => {
     });
 }
 
-
-/**
- * Read route and return object with origin and destiny
- */
-const readRoute = (string) => {
-    const array = string.split("-")
-    return { origin: array[0], destiny: array[1] }
-
-}
-
-
 /**
  * Write route on file
  */
@@ -38,6 +27,5 @@ const writeLine = (string, filename) => {
 
 module.exports = {
     readFile,
-    readRoute,
     writeLine
 }

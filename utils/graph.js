@@ -25,6 +25,7 @@ const fileStringToArray = (file) => {
 
 /**
  * Find shortest path function based on Dijkstra’s Algorithm
+ * https://levelup.gitconnected.com/finding-the-shortest-path-in-javascript-dijkstras-algorithm-8d16451eea34
  */
 let findShortestPath = (graph, startNode, endNode) => {
 

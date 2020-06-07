@@ -23,17 +23,29 @@ const main = async () => {
     recursiveAsyncReadLine(rl);
 }
 
+/**
+ * Read bash input recursive
+ */
 const recursiveAsyncReadLine = (readline) => {
     readline.question('please enter the route:', (input) => {
         if (input == 'exit')
             return readline.close();
-        const routes = file.readRoute(input)
+        const routes = readRoute(input)
         const shortestPath = graph.findShortestPath(routesGraph, routes.origin, routes.destiny);
         const outputMessage = output.formatResult(shortestPath)
         log(`best route: ${outputMessage}`);
         recursiveAsyncReadLine(readline);
     });
 };
+
+/**
+ * Read route and return object with origin and destiny
+ */
+const readRoute = (string) => {
+    const array = string.split("-")
+    return { origin: array[0], destiny: array[1] }
+
+}
 
 module.exports = {
     main

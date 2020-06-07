@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "airline-routes",
   "version": "1.0.0",
   "description": "Teste para o banco bexs",
   "main": "server.js",

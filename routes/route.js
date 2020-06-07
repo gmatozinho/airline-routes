@@ -13,7 +13,7 @@ router.get('/best/', async function (req, res) {
     }
 });
 
-/* Create new route. */
+/* POST Create new route. */
 router.post('/', function (req, res) {
     const [error, response] =
         routeController.createRoute(req.body)

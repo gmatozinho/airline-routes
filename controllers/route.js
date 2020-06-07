@@ -3,7 +3,7 @@ const { file, graph, output } = require('../utils');
 const bestRoute = async ({ origin, destiny }) => {
 
     try {
-        const filename = process.argv[2];
+        const filename = process.argv[2] || 'input-routes.csv';
         if (!filename) {
             throw new Error("Filename not found!")
         }
@@ -28,7 +28,7 @@ const bestRoute = async ({ origin, destiny }) => {
 
 const createRoute = ({ origin, destiny, price }) => {
     try {
-        const filename = process.argv[2];
+        const filename = process.argv[2] || 'input-routes.csv';
         if (!filename) {
             throw new Error("Filename not found!")
         }

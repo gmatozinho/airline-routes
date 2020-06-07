@@ -38,6 +38,6 @@ const writeLine = (string, filename) => {
 
 module.exports = {
     readFile,
-    readRoute, 
+    readRoute,
     writeLine
 }
